@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: hsl(235, 21%, 11%);
+  font-size: 18px;
+}
+.background-image {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 350px;
+  z-index: -1;
+}
+.background-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+.container {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 30px;
+  margin-top: 100px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+.theme {
+  cursor: pointer;
+}
+.new-todo {
+  background-color: hsl(235, 21%, 11%);
+  height: 70px;
+  margin-top: 50px;
+  display: flex;
+  border-radius: 6px;
+}
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+}
+.check-mark {
+  width: 30px;
+  height: 30px;
+  border: 2px solid hsl(237, 14%, 26%);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.check-mark:hover {
+  background-image: linear-gradient(135deg, #55ddff 0%, #c058f3 100%);
+}
+.new-input {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+.new-input form {
+  flex-grow: 1;
+}
+.new-input input {
+  width: 100%;
+  padding: 10px 0px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: hsl(234, 39%, 85%);
+}
+.new-input input::placeholder {
+  color: hsl(233, 14%, 35%);
+}

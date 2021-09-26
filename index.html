@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-image">
+      <img src="images/bg-desktop-dark.jpg" alt="" />
+    </div>
+    <div class="container">
+      <div class="header">
+        <div class="title">TODO</div>
+        <div class="theme">
+          <img src="images/icon-sun.svg" alt="" />
+        </div>
+      </div>
+      <div class="new-todo">
+        <div class="check">
+          <div class="check-mark"></div>
+        </div>
+        <div class="new-input">
+          <form id="form">
+            <input
+              type="text"
+              placeholder="Create a new todo..."
+              id="todo-input"
+            />
+          </form>
+        </div>
+      </div>
+      <div class="todo-items-wrapper">
+        <div class="todo-items">
+          <div class="todo-item">
+            <div class="check">
+              <div class="check-mark"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
